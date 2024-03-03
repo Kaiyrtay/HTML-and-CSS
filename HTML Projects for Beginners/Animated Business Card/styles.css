@@ -1,0 +1,90 @@
+body {
+  width: 90vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(35deg, #ecf211, #d25318, #5bd218, #8718d2);
+  background-size: 800% 800%;
+
+  -webkit-animation: AnimationName 33s ease infinite;
+  -moz-animation: AnimationName 33s ease infinite;
+  animation: AnimationName 33s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 87%;
+  }
+  50% {
+    background-position: 100% 14%;
+  }
+  100% {
+    background-position: 0% 87%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 87%;
+  }
+  50% {
+    background-position: 100% 14%;
+  }
+  100% {
+    background-position: 0% 87%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 87%;
+  }
+  50% {
+    background-position: 100% 14%;
+  }
+  100% {
+    background-position: 0% 87%;
+  }
+}
+
+.card {
+  width: 400px;
+  height: 200px;
+  background-color: #222;
+  border-radius: 3px;
+  opacity: 0.9;
+}
+.card:hover {
+  transform: rotateY(10deg);
+}
+
+h1 {
+  padding-top: 1rem;
+  color: orangered;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 2rem;
+  letter-spacing: 0.5rem;
+  line-height: 0.5rem;
+}
+h1:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+p {
+  padding-top: 1rem;
+  color: orangered;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 0.3rem;
+  letter-spacing: 0.5rem;
+  line-height: 1rem;
+}
+a {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 3px;
+}
