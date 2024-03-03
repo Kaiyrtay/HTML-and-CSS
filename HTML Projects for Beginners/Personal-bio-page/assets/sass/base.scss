@@ -1,0 +1,82 @@
+@import "_reset";
+@import "_variables";
+@import "_topography";
+@import "_mixins";
+
+// GLOBAL SELECTORS
+body {
+  font-family: $font-family;
+  background-color: $light;
+}
+h1 {
+  text-align: center;
+}
+section {
+  padding: 2rem;
+  margin: 1rem;
+}
+a {
+  @include button($primary);
+  display: inline-block;
+}
+
+#projects {
+  .project-list-item {
+    margin: 1rem 0;
+    padding: 1rem;
+    &:hover {
+      @include shadow($dark);
+    }
+  }
+  .project {
+    margin: 1rem auto;
+  }
+  .project-title {
+    display: inline-block;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    background-color: $dark;
+    color: $light;
+  }
+  img {
+    display: block;
+    width: 80vw;
+    margin: auto;
+  }
+  h4 {
+    padding-top: 2rem;
+  }
+  .project-description {
+    text-align: center;
+  }
+  .project-features {
+    padding: 0 1rem;
+    border-radius: 3px;
+  }
+  .project-features-list {
+    margin-left: 2rem;
+  }
+  .project-link {
+    @include button($secondary);
+    @include shadow($dark);
+    display: inline-block;
+  }
+
+  .bottom-link {
+    text-align: center;
+    a {
+      @include shadow($dark);
+    }
+  }
+}
+
+footer {
+  a {
+    @include button($warning);
+  }
+  padding: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+}

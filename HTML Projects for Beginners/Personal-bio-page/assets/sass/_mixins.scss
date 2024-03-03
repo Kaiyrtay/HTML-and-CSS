@@ -1,0 +1,40 @@
+@import "_variables";
+
+@mixin text-tab {
+  h2 {
+    padding-left: 1rem;
+  }
+  p {
+    text-indent: 1rem;
+  }
+}
+@mixin button-r-p-m($margin: 5px, $padding: 5px 10px, $b-r: 2px) {
+  margin: $margin;
+  padding: $padding;
+  border-radius: $b-r;
+}
+@mixin button($color: $primary) {
+  @include button-r-p-m;
+  text-decoration: none;
+  background-color: $color;
+  color: $light;
+  &:hover {
+    border: 1px solid $color;
+    background-color: $light;
+    color: $color;
+  }
+}
+@mixin button-outline($color: $primary) {
+  @include button-r-p-m($padding: 2px 5px);
+  text-decoration: none;
+  border: 1px solid $color;
+  background-color: $light;
+  color: $color;
+  &:hover {
+    background-color: $color;
+    color: $light;
+  }
+}
+@mixin shadow($color: $primary) {
+  box-shadow: 5px 5px 2px $color;
+}
